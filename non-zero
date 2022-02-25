@@ -1,0 +1,26 @@
+PROGRAMME:
+n=int(input('enter n: '))
+l=[]
+t=[]
+for i in range(n):
+    x=int(input('enter x: '))
+    l.append(x)
+
+for i in range(n):
+    if l[i]!=0:
+        t.append(l[i])
+print('non zero numbers: ',t)
+c=0
+for i in range(n):
+    if l[i]!=0:
+        c=c+1
+print('count is: ',c)
+OUTPUT:
+enter n: 5
+enter x: 1
+enter x: 0
+enter x: 2
+enter x: 0
+enter x: 3
+non zero numbers:  [1, 2, 3]
+count is:  3
